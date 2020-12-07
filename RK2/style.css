@@ -1,0 +1,9 @@
+li:nth-child(2n) {
+    background-color: rgba(201, 157, 224, 1);
+}
+li:nth-child(2n+1) {
+    background-color: rgb(252, 115, 222);
+}
+ol {
+    width: 200px;
+}
