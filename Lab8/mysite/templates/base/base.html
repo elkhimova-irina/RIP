@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+<head>
+    {% include 'base/includes/header.html' %}
+    <title>
+        {% block title %}
+            Coffee
+        {% endblock title %}
+    </title>
+</head>
+
+<body style="background:linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(' {% static 'assets/img/bg.jpg' %} ');">
+    {% include 'base/includes/nav.html' %}
+
+    {% block body %}
+        Coffee
+    {% endblock body %}
+    
+    {% include 'base/includes/footer.html' %}
+</body>
+
+</html>
